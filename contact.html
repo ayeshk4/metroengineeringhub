@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metropolitan Technologies</title>
+    <link rel="stylesheet" href="./Assets/css/headerFooterStyles.css">
+    <link rel="stylesheet" href="./Assets/css/contactStyles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Logo -->
+                <a href="./index.html" class="logo">
+                    <div class="logo-img"><img src="./Assets/Images/metrologo.png" alt="Logo"></div>
+                </a>
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./contact.html">Contact Us</a>
+                    <a href="./contact.html">FAQs</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="bodyContentContainer"> 
+        <section class="contactContainer">
+            <h1>Contact Us</h1>
+            <p class="lead">We’d love to hear about your project or answer any questions you might have. Get in touch using the form or our contact details below.</p>
+            <div class="lr-split-container">
+                <div class="lr-split">
+                    <!-- <div id="contactFormContainer">
+                        <form id="contact-form">
+                            <div class="row">
+                                <input type="text" name="name" placeholder="Your Name" required />
+                                <input type="email" name="email" placeholder="Email Address" required />
+                            </div>
+                            <div class="row">
+                                <input type="tel" name="phone" placeholder="Phone (optional)" />
+                                <input type="text" name="subject" placeholder="Subject" />
+                            </div>
+                            <div id="textareaContainer">
+                                <textarea name="message" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <div id="submitContainer">
+                                <button type="submit" id="submit_btn">Send Message</button>
+                                <span id="we_will_reach_msg">We’ll get back to you shortly.</span>
+                            </div>
+                        </form>
+                    </div> -->
+                    <div id="contactFormContainer">
+                        <form id="contact-form" method="POST">
+                            <div class="row">
+                                <input type="text" name="name" placeholder="Your Name" required />
+                                <input type="email" name="email" placeholder="Email Address" required />
+                            </div>
+                            <div class="row">
+                                <input type="tel" name="phone" placeholder="Phone (optional)" />
+                                <input type="text" name="subject" placeholder="Subject" />
+                            </div>
+                            <div id="textareaContainer">
+                                <textarea name="message" placeholder="Your message here..." required></textarea>
+                            </div>
+
+                            <!-- reCAPTCHA -->
+                            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+
+                            <div id="submitContainer">
+                                <button type="submit" id="submit_btn">Send Message</button>
+                                <span id="we_will_reach_msg" style="display:none;">We’ll get back to you shortly.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="highlight_box">
+                    <section class="faq-section container" id="faqMainSection">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="faq-lead">Find quick answers to some of the most common questions we receive.</p>
+    
+                        <div class="faq-accordion">
+                            <div class="faq-item" id="faq1">
+                                <div class="faq-question">
+                                    How can I request a quotation? <span class="faq-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>You can request a quotation by filling out the contact form above or calling us directly. Our team will get back to you within 24 hours.</p>
+                                </div>
+                            </div>
+    
+                            <div class="faq-item" id="faq2">
+                                <div class="faq-question">
+                                    What are your service hours? <span class="faq-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Our service team is available from Monday to Friday, 8:30 AM to 5:30 PM. Emergency services are also available on weekends.</p>
+                                </div>
+                            </div>
+    
+                            <div class="faq-item" id="faq3">
+                                <div class="faq-question">
+                                    Do you provide on-site support? <span class="faq-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, our technicians provide on-site support for all Central AC systems, ensuring minimal downtime and quick troubleshooting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                
+                <div class="lr-split">
+                    <div class="contact-info">
+                        <h2>Metropolitan Technologies - Engineering Hub<br>(Peliyagoda Branch)</h2>
+                        <div id="hrDiv"></div>
+                        <div id="addressContent">
+                            <div id="addressInfo">
+                                <p><b>Address:</b><br>
+                                Metropolitan Technologies Engineering Hub<br/>
+                                Negombo Rd, Peliyagoda<br/>
+                                Colombo 11830<br/>
+                                Sri Lanka<br/><br></p>
+                                <p><b>Phone:</b><br><a href="tel:+94114705000">+94 11 470 5000</a><br><br></p>
+                                <p><b>Email:</b><br><a href="mailto:contactus@metropolitan.lk">contactus@metropolitan.lk</a><br><br></p>
+                                <p><b>Working Hours:</b><br>Mon - Fri: 8:30am - 5:00pm<br><br></p>
+                            </div>
+                            <div id="addressMap" class="mapouter" style="position:relative; text-align:right; width:100%; height:450px;">
+                                <div class="gmap_canvas" style="overflow:hidden; background:none!important; width:100%; height:450px;">
+                                    <iframe width="500px" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=Engineering%20Hub%20%2C%20Peliyagoda%2C%20Peliyagoda%2C%20Colombo%2011830&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                </div>
+                                <a href="https://norsumediagroup.com/embed-google-map-website-free" target="_blank" rel="noopener noreferrer" class="gme-generated-link">Embed Map on Website for Free</a>
+                            </div>
+                        </div>
+                        <!-- <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1400&auto=format&fit=crop" alt="Office" style="border-radius:12px; margin-top:1rem; width:100%; height:auto; object-fit:cover"/> -->
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!-- Footer Starts -->
+    <footer>
+        <div class="container foot-grid">
+            <div class="foot">
+                <h4>Contact info</h4>
+                <p><span class="contactTopic">Address</span><br>
+                Metropolitan Technologies Engineering Hub<br/>
+                Negombo Rd, Peliyagoda<br/>
+                Colombo 11830<br/>
+                Sri Lanka<br/><br>
+                <span class="contactTopic">Contact No</span><br>
+                <a href="tel:+94114705000">+94 11 470 5000</a><br>
+                <span class="contactTopic" id="openMail">E-mail</span><br>
+                <a href="mailto:contactus@metropolitan.lk">contactus@metropolitan.lk</a></p>
+            </div>
+            <div class="foot">
+                <h4>Useful links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#faqs">FAQs</a>
+            </div>
+        </div>
+        <div class="container copyright">Metropolitan Technologies Engineering Hub © 2025. All Rights Reserved</div>
+    </footer>
+<!-- Footer Ends -->
+
+    <script src="./Assets/js/commonScript.js"></script>
+    <script src="./Assets/js/contactScript.js"></script>
+    <!-- Include reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+</body>
+</html>

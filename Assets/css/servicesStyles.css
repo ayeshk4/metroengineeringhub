@@ -1,0 +1,139 @@
+:root{
+    --bg: #fff;
+    --fontInk: #0f0f0f;
+    --primaryBlue:#144A92;
+    --secondaryBlue:#144a9233;
+    --primaryRed:#CB0816;
+    --secondaryRed:#CB081633;
+    --lightSweetPoint:#e5e7eb;
+    --ink2:#334155;
+    --primaryBgGradient: linear-gradient(to right, var(--primaryBlue), var(--primaryRed));
+    --secondaryBgGradient: linear-gradient(135deg, var(--secondaryBlue), var(--secondaryRed));
+    --bgGradient2: linear-gradient(315deg, var(--primaryBlue), #0766c6);
+
+}
+.bodyContentContainer {
+    font-size: 1.05rem;
+    padding: 3vh 5vw;
+    margin-bottom: 8vh;
+}
+
+/* --- Intro Section --- */
+#service_intro_tagline {
+    display: flex;
+    justify-content: center;
+}
+
+#our_service_intro_tagline {
+    color: white;
+    background: var(--bgGradient2);
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.servicesIntroText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    /* max-width: 900px; */
+    margin: auto;
+}
+
+.servicesIntroText h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--ink2);
+}
+
+#service_intro_para {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+    color: var(--ink2);
+}
+
+/* --- Service Cards --- */
+#mainServicesSplit {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.serviceSplit {
+    border-radius: 16px;
+    border: 1px solid var(--lightSweetPoint);
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    background: white;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.serviceSplit:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.splitTopic {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.splitTopic h2 {
+    color: var(--primaryBlue);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.serviceIcon {
+    width: 50px;
+    height: 50px;
+    padding: 0.4rem;
+    border-radius: 12px;
+    background: var(--secondaryBlue);
+    transition: all 0.4s ease;
+}
+
+.serviceSplit:hover .serviceIcon {
+    background: var(--secondaryBgGradient);
+    transform: rotate(360deg) scale(1.1);
+    transition: all 0.4s ease;
+}
+
+.serviceSplit p {
+    color: var(--ink2);
+    line-height: 1.6rem;
+    font-size: 0.95rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    #mainServicesSplit {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    #mainServicesSplit {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesIntroText h1 {
+        font-size: 2rem;
+    }
+
+    #our_service_intro_tagline {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+}

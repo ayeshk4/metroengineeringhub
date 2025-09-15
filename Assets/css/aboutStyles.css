@@ -1,0 +1,356 @@
+:root{
+    --bg: #fff;
+    --fontInk: #0f0f0f;
+    --primaryBlue:#144A92;
+    --secondaryBlue:#144a9233;
+    --primaryRed:#CB0816;
+    --lightSweetPoint:#e5e7eb;
+    --ink2:#334155;
+}
+
+/* .lifted {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.lifted:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+} */
+
+
+/* ABOUT INTRO SECTION STYLES STARTS */
+/* ************************** */
+/* .bodyContentContainer{
+    padding: 3vh 5vw;
+    font-size: 1.05rem;
+}
+
+.left-right-divider{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+#about_intro_para{
+    border: 1px solid var(--lightSweetPoint);
+    border-radius: 20px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#right_about_visual img{
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#left_about_intro h1{
+    margin-left: .2rem;
+}
+
+#aboutUsIntro{
+    padding-bottom: 11vh;
+    border-bottom: var(--lightSweetPoint) 1px solid;
+} */
+
+
+
+
+
+/* General About Section */
+.aboutUsSection {
+    padding: 5vh 0vw;
+    /* background: #f9f9f9; */
+}
+
+.aboutContainer {
+    /* max-width: 100%; */
+    margin: 0rem 5rem;
+}
+
+.left-right-divider {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left Section */
+#left_about_intro {
+    flex: 1 1 45%;
+}
+
+#left_about_intro h1 {
+    font-size: 2.5rem;
+    /* color: var(--primaryBlue); */
+    margin-bottom: 1.5rem;
+    padding-left: .5rem;
+}
+
+#about_intro_para {
+    border: 1px solid var(--lightSweetPoint);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background: rgba(255,255,255,0.9);
+    line-height: 1.7;
+    font-size: 1rem;
+    color: var(--ink2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about_intro_para:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Right Section */
+#right_about_visual {
+    /* flex: 1 1 45%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right_about_visual img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#right_about_visual img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .left-right-divider {
+        gap: 3vw;
+    }
+}
+
+/* @media (max-width: 768px) { */
+@media (max-width: 1066px) {
+    .left-right-divider {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    #left_about_intro, #right_about_visual {
+        flex: 1 1 100%;
+    }
+
+    #left_about_intro h1 {
+        font-size: 2rem;
+    }
+
+    #about_intro_para {
+        font-size: 0.95rem;
+        padding: 20px;
+    }
+
+    #right_about_visual img {
+        max-width: 90%;
+    }
+}
+
+/* Section bottom border and spacing */
+#aboutUsIntro {
+    border-bottom: 1px solid var(--lightSweetPoint);
+    padding-bottom: 10vh;
+}
+
+
+
+
+
+
+
+/* ABOUT INTRO SECTION STYLES ENDS */
+
+
+/* SECTION 2 STYLES STARTS */
+/* **************** */
+/* About Us Policy Section */
+#aboutUsPolicy {
+    /* padding-top: 12vh; */
+    padding: 6vh 5vw;
+    background: #f9f9f9;
+}
+
+/* Tabs Container */
+#topicContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.topics {
+    display: flex;
+    gap: 1.2rem;
+    font-weight: 600;
+}
+
+.topics span {
+    padding: 1.1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 1px solid var(--lightSweetPoint);
+    color: var(--primaryBlue);
+    font-size: 1rem;
+}
+
+.topics span:hover {
+    background-color: var(--secondaryBlue);
+    color: var(--ink2);
+}
+
+.topics span.active {
+    background-color: var(--primaryBlue);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Tab Content Cards */
+.splits {
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background-color: white;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+/* Show active tab with fade */
+.splits.show {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Headings */
+.split_main_topic h2 {
+    color: var(--primaryBlue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Tick-list styling */
+.tick-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tick-list li {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tick-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primaryBlue);
+    font-weight: bold;
+}
+#noneOl{
+    list-style-type: none;
+}
+
+/* Promise split sections */
+#left_right_split {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.lrSplit {
+    flex: 1 1 48%;
+}
+
+#promisePoints p, .tick-list p {
+    line-height: 1.8rem;
+    font-size: 1rem;
+    color: var(--ink2);
+}
+
+/* View more button */
+#viewMoreServices_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+#viewMoreServices_btn button {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.04rem;
+    background-color: var(--primaryBlue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#viewMoreServices_btn button:hover {
+    background-color: var(--secondaryBlue);
+    color: var(--ink2);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    #left_right_split {
+        flex-direction: column;
+        gap: 0;
+    }
+    .lrSplit {
+        flex: 1 1 100%;
+    }
+    #promiseRight{
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .topics {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .topics span {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    .splits {
+        padding: 2rem;
+    }
+}
+
+
+/* @media (max-width: 760px) {
+    #left_right_split{
+        flex-direction: column;
+    }
+    .lrSplit{
+        width: 100%;
+    }
+} */
+
+/* SECTION 2 STYLES ENDS */
