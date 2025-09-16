@@ -98,6 +98,7 @@
     font-size: 1rem;
     color: var(--ink2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
 }
 
 #about_intro_para:hover {
@@ -138,10 +139,10 @@
 @media (max-width: 1066px) {
     .left-right-divider {
         flex-direction: column-reverse;
-        gap: 3rem;
+        gap: 1rem;
     }
     .aboutContainer {
-        margin: 0rem 2rem;
+        margin: 0rem .7rem;
     }
 
     #left_about_intro, #right_about_visual {
@@ -256,10 +257,15 @@
     margin: 0;
 }
 
+#servicePoints p{
+    margin-top: -1.2rem;
+}
+
 .tick-list li {
     position: relative;
     padding-left: 2.5rem;
     margin-bottom: 1rem;
+    padding-bottom: .2rem;
 }
 
 .tick-list li::before {
@@ -289,6 +295,7 @@
     line-height: 1.8rem;
     font-size: 1rem;
     color: var(--ink2);
+    text-align: justify;
 }
 
 /* View more button */
@@ -317,6 +324,13 @@
 }
 
 /* Responsive */
+@media (max-width: 1066px) {
+    p, #promisePoints p, .tick-list p {
+        font-size: .92rem;
+    }
+}
+
+
 @media (max-width: 1024px) {
     #left_right_split {
         flex-direction: column;
@@ -331,6 +345,9 @@
 }
 
 @media (max-width: 768px) {
+    #aboutUsPolicy {
+        padding: 6vh 0;
+    }
     .topics {
         flex-direction: column;
         gap: 0.5rem;
