@@ -164,6 +164,15 @@
     }
 }
 
-@media screen and (max-width: 1000px){
-
+@media screen and (max-width: 500px){
+    #mainHeading{
+        font-size: 3.4rem;
+    }
+    #subPara{
+        font-size: 1.2rem;
+    }
+    #ourVision-simple{
+        font-size: 0.9rem;
+        padding: 2vh 3vw;
+    }
 }
