@@ -238,7 +238,11 @@
     display: block;
     animation: fadeIn 0.5s ease;
 }
-
+#split3_promise .split_main_topic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #split3_promise .split_main_topic img{
     width: 25rem;
     height: auto;

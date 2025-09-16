@@ -236,7 +236,8 @@ nav {
 
     .nav-links a {
         font-size: 1.2rem;
-        width: 100%;
+        /* width: 100%; */
+        width: 215px;
         padding: 14px 18px;
     }
 }

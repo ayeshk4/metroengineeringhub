@@ -11,6 +11,7 @@
     --primaryBgGradient: linear-gradient(to right, var(--primaryBlue), var(--primaryRed));
     --secondaryBgGradient: linear-gradient(to right, var(--secondaryBlue), var(--secondaryRed));
     --bgGradient2: linear-gradient(to left, var(--primaryBlue), #0660b9);
+    --bgGradient3: linear-gradient(to left, var(--secondaryBlue), #829dbb);
     --belt-height: 120px;
     --gap: 20px; 
     --duration: 20s;
@@ -180,13 +181,27 @@
     padding: .4rem;
     border-radius: 10px;
     filter: drop-shadow(0 0 3px var(--lightSweetPoint));
+    background: var(--bgGradient3);
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-#repair_card {
+/* #repair_card {
     background-color: var(--secondaryBlue);
 }
 #spare_card {
     background-color: var(--secondaryRed);
-}
+} */
 .service_card_descripton {
     font-size: .95rem;
     color: var(--ink2);
