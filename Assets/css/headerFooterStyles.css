@@ -343,8 +343,14 @@ footer{
     font-weight: 600;
     font-size: 1.1rem;
 }
+.iconCreditsContainer{
+    font-size: .7rem;
+}
 @media (max-width: 720px){
     .foot-grid{
         grid-template-columns:1fr
+    }
+    .foot{
+        font-size: .92rem;
     }
 }
