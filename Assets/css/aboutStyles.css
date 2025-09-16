@@ -239,6 +239,11 @@
     animation: fadeIn 0.5s ease;
 }
 
+#split3_promise .split_main_topic img{
+    width: 25rem;
+    height: auto;
+}
+
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(10px);}
     to {opacity: 1; transform: translateY(0);}
@@ -343,6 +348,10 @@
     #promiseRight{
         margin-top: -1rem;
     }
+    #split3_promise .split_main_topic img{
+        width: 20rem;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -360,6 +369,12 @@
     }
     .splits {
         padding: 2rem;
+    }
+}
+@media (max-width: 500px){
+    #split3_promise .split_main_topic img{
+        width: 16rem;
+        height: auto;
     }
 }
 

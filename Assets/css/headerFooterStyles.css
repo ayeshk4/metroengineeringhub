@@ -231,6 +231,7 @@ nav {
 
     .hamburger {
         display: flex;
+        z-index: 100100;
     }
 
     .nav-links a {
