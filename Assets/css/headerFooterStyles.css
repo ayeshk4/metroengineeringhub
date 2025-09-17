@@ -348,6 +348,24 @@ footer{
 .iconCreditsContainer{
     font-size: .6rem;
 }
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: var(--ink2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primaryBlue, #144a92); /* adjust to your theme */
+    transform: translateY(-3px);
+}
+
 @media (max-width: 720px){
     .foot-grid{
         grid-template-columns:1fr

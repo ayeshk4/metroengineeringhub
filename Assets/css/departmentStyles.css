@@ -322,7 +322,7 @@
 /* ================= Partners ================= */
 #ac_division_partners {
     text-align: center;
-    margin: 4rem 0;
+    margin: 0;
 }
 #ac_division_partners h2::after {
     content: "";
@@ -434,7 +434,7 @@
         height: 30vh;
     }
     .partnerContainer {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media (max-width: 640px) {
@@ -453,7 +453,7 @@
         height: auto;
     }
     .partnerContainer {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
